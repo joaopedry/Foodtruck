@@ -117,5 +117,19 @@ namespace Foodtruck.Grafico
             tela.MdiParent = this;
             tela.Show();
         }
+
+        private void bebidasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaListaBebida listaBebida = new TelaListaBebida();
+            listaBebida.MdiParent = this;
+            listaBebida.Show();
+        }
+
+        private void lanchesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaListaLanches telaLanche = new TelaListaLanches();
+            telaLanche.MdiParent = this;
+            telaLanche.Show();
+        }
     }
 }
