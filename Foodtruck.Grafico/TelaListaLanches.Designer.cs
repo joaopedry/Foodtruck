@@ -40,7 +40,7 @@
             // btAdicionarLanche
             // 
             this.btAdicionarLanche.Location = new System.Drawing.Point(9, 10);
-            this.btAdicionarLanche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAdicionarLanche.Margin = new System.Windows.Forms.Padding(2);
             this.btAdicionarLanche.Name = "btAdicionarLanche";
             this.btAdicionarLanche.Size = new System.Drawing.Size(72, 27);
             this.btAdicionarLanche.TabIndex = 0;
@@ -51,7 +51,7 @@
             // btRemoverLanche
             // 
             this.btRemoverLanche.Location = new System.Drawing.Point(86, 10);
-            this.btRemoverLanche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRemoverLanche.Margin = new System.Windows.Forms.Padding(2);
             this.btRemoverLanche.Name = "btRemoverLanche";
             this.btRemoverLanche.Size = new System.Drawing.Size(72, 27);
             this.btRemoverLanche.TabIndex = 1;
@@ -62,7 +62,7 @@
             // btAlterarLanche
             // 
             this.btAlterarLanche.Location = new System.Drawing.Point(162, 10);
-            this.btAlterarLanche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAlterarLanche.Margin = new System.Windows.Forms.Padding(2);
             this.btAlterarLanche.Name = "btAlterarLanche";
             this.btAlterarLanche.Size = new System.Drawing.Size(72, 27);
             this.btAlterarLanche.TabIndex = 2;
@@ -77,7 +77,7 @@
             this.Nome,
             this.Valor});
             this.dgLanches.Location = new System.Drawing.Point(9, 50);
-            this.dgLanches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgLanches.Margin = new System.Windows.Forms.Padding(2);
             this.dgLanches.Name = "dgLanches";
             this.dgLanches.RowTemplate.Height = 24;
             this.dgLanches.Size = new System.Drawing.Size(582, 306);
@@ -104,7 +104,7 @@
             this.Controls.Add(this.btAlterarLanche);
             this.Controls.Add(this.btRemoverLanche);
             this.Controls.Add(this.btAdicionarLanche);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaListaLanches";
             this.Text = "TelaListaLanches";
             ((System.ComponentModel.ISupportInitialize)(this.dgLanches)).EndInit();
