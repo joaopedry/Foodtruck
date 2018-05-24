@@ -83,15 +83,16 @@
             // tbId
             // 
             this.tbId.Location = new System.Drawing.Point(74, 31);
-            this.tbId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbId.Margin = new System.Windows.Forms.Padding(2);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(150, 20);
             this.tbId.TabIndex = 4;
+            this.tbId.TextChanged += new System.EventHandler(this.tbId_TextChanged);
             // 
             // tbNome
             // 
             this.tbNome.Location = new System.Drawing.Point(74, 66);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(2);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(527, 20);
             this.tbNome.TabIndex = 5;
@@ -99,7 +100,7 @@
             // tbCpf
             // 
             this.tbCpf.Location = new System.Drawing.Point(74, 102);
-            this.tbCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCpf.Margin = new System.Windows.Forms.Padding(2);
             this.tbCpf.Name = "tbCpf";
             this.tbCpf.Size = new System.Drawing.Size(150, 20);
             this.tbCpf.TabIndex = 6;
@@ -107,7 +108,7 @@
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(74, 139);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(526, 20);
             this.tbEmail.TabIndex = 7;
@@ -115,7 +116,7 @@
             // btSalvar
             // 
             this.btSalvar.Location = new System.Drawing.Point(504, 181);
-            this.btSalvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSalvar.Margin = new System.Windows.Forms.Padding(2);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(95, 48);
             this.btSalvar.TabIndex = 8;
@@ -126,7 +127,7 @@
             // btCancelar
             // 
             this.btCancelar.Location = new System.Drawing.Point(400, 181);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(96, 48);
             this.btCancelar.TabIndex = 9;
@@ -149,7 +150,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManterCliente";
             this.Text = "ManterCliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

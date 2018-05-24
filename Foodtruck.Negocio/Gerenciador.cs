@@ -79,6 +79,31 @@ namespace Foodtruck.Negocio
             return validacao;
         }
 
+        public Validacao AdicionarLanche(Lanche lancheAdicionado)
+        {
+            Validacao validacao = new Validacao();
+            if (lancheAdicionado.Id < 0)
+            {
+                validacao.Mensagens.Add("Id", "O indenfiticador deve constituir apenas números positivos");
+            }
+            //verifica se já tem alguma mensagem de erro e se tiver pula essa verificação
+            if (this.banco.Lanches.Where(c => c.Id == lancheAdicionado.Id).Any() && validacao.Mensagens.Count == 0)
+            {
+                validacao.Mensagens.Add("Id", "Já existe um cliente com esse código");
+            }
+            if (String.IsNullOrEmpty(lancheAdicionado.Nome))
+            {
+                validacao.Mensagens.Add("Lanche", "O Lanche não pode ser nulo ou vazio");
+            }
+            if (validacao.Valido)
+            {
+                this.banco.Lanches.Add(lancheAdicionado);
+                this.banco.SaveChanges();
+            }
+
+            return validacao;
+        }
+
         public Validacao CadastraBebida(Bebida bebidaCadastrada)
         {
             Validacao validacao = new Validacao();

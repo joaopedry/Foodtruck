@@ -88,5 +88,10 @@ namespace Foodtruck.Grafico
         {
 
         }
+
+        private void tbId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
