@@ -98,5 +98,10 @@ namespace Foodtruck.Grafico
         {
 
         }
+
+        private void dgBebidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

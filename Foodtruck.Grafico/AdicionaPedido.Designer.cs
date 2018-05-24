@@ -84,7 +84,7 @@
             // 
             this.cbClientes.FormattingEnabled = true;
             this.cbClientes.Location = new System.Drawing.Point(66, 16);
-            this.cbClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbClientes.Margin = new System.Windows.Forms.Padding(2);
             this.cbClientes.Name = "cbClientes";
             this.cbClientes.Size = new System.Drawing.Size(186, 21);
             this.cbClientes.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             this.cbBebidas.FormattingEnabled = true;
             this.cbBebidas.Location = new System.Drawing.Point(66, 46);
-            this.cbBebidas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbBebidas.Margin = new System.Windows.Forms.Padding(2);
             this.cbBebidas.Name = "cbBebidas";
             this.cbBebidas.Size = new System.Drawing.Size(186, 21);
             this.cbBebidas.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             this.cbLanches.FormattingEnabled = true;
             this.cbLanches.Location = new System.Drawing.Point(352, 49);
-            this.cbLanches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbLanches.Margin = new System.Windows.Forms.Padding(2);
             this.cbLanches.Name = "cbLanches";
             this.cbLanches.Size = new System.Drawing.Size(143, 21);
             this.cbLanches.TabIndex = 6;
@@ -110,7 +110,7 @@
             // btAdicionaBebida
             // 
             this.btAdicionaBebida.Location = new System.Drawing.Point(254, 46);
-            this.btAdicionaBebida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAdicionaBebida.Margin = new System.Windows.Forms.Padding(2);
             this.btAdicionaBebida.Name = "btAdicionaBebida";
             this.btAdicionaBebida.Size = new System.Drawing.Size(38, 18);
             this.btAdicionaBebida.TabIndex = 7;
@@ -121,7 +121,7 @@
             // btAdicionaLanche
             // 
             this.btAdicionaLanche.Location = new System.Drawing.Point(501, 49);
-            this.btAdicionaLanche.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAdicionaLanche.Margin = new System.Windows.Forms.Padding(2);
             this.btAdicionaLanche.Name = "btAdicionaLanche";
             this.btAdicionaLanche.Size = new System.Drawing.Size(38, 18);
             this.btAdicionaLanche.TabIndex = 8;
@@ -137,11 +137,12 @@
             this.Tamanho,
             this.Valor});
             this.dgBebidas.Location = new System.Drawing.Point(18, 78);
-            this.dgBebidas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgBebidas.Margin = new System.Windows.Forms.Padding(2);
             this.dgBebidas.Name = "dgBebidas";
             this.dgBebidas.RowTemplate.Height = 33;
             this.dgBebidas.Size = new System.Drawing.Size(276, 207);
             this.dgBebidas.TabIndex = 9;
+            this.dgBebidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBebidas_CellContentClick);
             // 
             // Nome
             // 
@@ -171,7 +172,7 @@
             this.NomeLanche,
             this.ValorLanche});
             this.dgLanches.Location = new System.Drawing.Point(302, 78);
-            this.dgLanches.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgLanches.Margin = new System.Windows.Forms.Padding(2);
             this.dgLanches.Name = "dgLanches";
             this.dgLanches.RowTemplate.Height = 33;
             this.dgLanches.Size = new System.Drawing.Size(282, 207);
@@ -192,7 +193,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(478, 298);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 30);
             this.button3.TabIndex = 11;
@@ -237,7 +238,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdicionaPedido";
             this.Text = "AdicionaPedido";
             this.Load += new System.EventHandler(this.AdicionaPedido_Load);

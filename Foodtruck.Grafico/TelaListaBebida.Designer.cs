@@ -41,7 +41,7 @@
             // btAdicionaBebida
             // 
             this.btAdicionaBebida.Location = new System.Drawing.Point(9, 10);
-            this.btAdicionaBebida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAdicionaBebida.Margin = new System.Windows.Forms.Padding(2);
             this.btAdicionaBebida.Name = "btAdicionaBebida";
             this.btAdicionaBebida.Size = new System.Drawing.Size(82, 28);
             this.btAdicionaBebida.TabIndex = 0;
@@ -52,7 +52,7 @@
             // btRemoverBebida
             // 
             this.btRemoverBebida.Location = new System.Drawing.Point(96, 10);
-            this.btRemoverBebida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btRemoverBebida.Margin = new System.Windows.Forms.Padding(2);
             this.btRemoverBebida.Name = "btRemoverBebida";
             this.btRemoverBebida.Size = new System.Drawing.Size(82, 28);
             this.btRemoverBebida.TabIndex = 1;
@@ -63,7 +63,7 @@
             // btAlterarBebida
             // 
             this.btAlterarBebida.Location = new System.Drawing.Point(183, 10);
-            this.btAlterarBebida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btAlterarBebida.Margin = new System.Windows.Forms.Padding(2);
             this.btAlterarBebida.Name = "btAlterarBebida";
             this.btAlterarBebida.Size = new System.Drawing.Size(82, 28);
             this.btAlterarBebida.TabIndex = 2;
@@ -79,11 +79,12 @@
             this.Tamanho,
             this.Valor});
             this.dgBebidas.Location = new System.Drawing.Point(10, 44);
-            this.dgBebidas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgBebidas.Margin = new System.Windows.Forms.Padding(2);
             this.dgBebidas.Name = "dgBebidas";
             this.dgBebidas.RowTemplate.Height = 24;
             this.dgBebidas.Size = new System.Drawing.Size(620, 314);
             this.dgBebidas.TabIndex = 3;
+            this.dgBebidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBebidas_CellContentClick);
             // 
             // Nome
             // 
@@ -112,7 +113,7 @@
             this.Controls.Add(this.btAlterarBebida);
             this.Controls.Add(this.btRemoverBebida);
             this.Controls.Add(this.btAdicionaBebida);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TelaListaBebida";
             this.Text = "TelaListaBebida";
             ((System.ComponentModel.ISupportInitialize)(this.dgBebidas)).EndInit();
