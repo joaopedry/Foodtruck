@@ -32,6 +32,7 @@
             this.btRemoverLanche = new System.Windows.Forms.Button();
             this.btAlterarLanche = new System.Windows.Forms.Button();
             this.dgLanches = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgLanches)).BeginInit();
@@ -74,6 +75,7 @@
             // 
             this.dgLanches.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgLanches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.Nome,
             this.Valor});
             this.dgLanches.Location = new System.Drawing.Point(9, 50);
@@ -82,6 +84,12 @@
             this.dgLanches.RowTemplate.Height = 24;
             this.dgLanches.Size = new System.Drawing.Size(582, 306);
             this.dgLanches.TabIndex = 3;
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
             // 
             // Nome
             // 
@@ -118,6 +126,7 @@
         private System.Windows.Forms.Button btRemoverLanche;
         private System.Windows.Forms.Button btAlterarLanche;
         private System.Windows.Forms.DataGridView dgLanches;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
     }

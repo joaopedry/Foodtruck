@@ -24,16 +24,7 @@ namespace Foodtruck.Grafico
         private void btSalvarLanche_Click_1(object sender, EventArgs e)
         {
             Lanche lanche = new Lanche();
-            /*if (Int64.TryParse(tbIdLanche.Text, out long value))
-            {
-                lanche.Id = value;
-            }
-            else
-            {
-                lanche.Id = -1;
-                //passa indentificador com valor negativo se não conseguir converter
-            }*/
-            //lanche.Id = int.Parse(tbIdLanche.Text);
+            lanche.Id = Convert.ToInt64(tbCodLanche.Text);
             lanche.Nome = tbNomeLanche.Text;
             lanche.Valor = decimal.Parse(tbValorLanche.Text);
 
@@ -46,8 +37,6 @@ namespace Foodtruck.Grafico
             {
                 validacao = Program.Gerenciador.AlterarLanche(lanche);
             }
-
-
 
             if (!validacao.Valido)
             {

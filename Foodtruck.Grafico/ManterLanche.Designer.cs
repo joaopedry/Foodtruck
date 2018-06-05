@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.valor = new System.Windows.Forms.Label();
+            this.tbCodLanche = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btCancelarLanche
@@ -64,7 +66,7 @@
             this.tbValorLanche.Location = new System.Drawing.Point(72, 130);
             this.tbValorLanche.Margin = new System.Windows.Forms.Padding(2);
             this.tbValorLanche.Name = "tbValorLanche";
-            this.tbValorLanche.Size = new System.Drawing.Size(150, 20);
+            this.tbValorLanche.Size = new System.Drawing.Size(527, 20);
             this.tbValorLanche.TabIndex = 16;
             // 
             // tbNomeLanche
@@ -85,7 +87,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 94);
+            this.label2.Location = new System.Drawing.Point(26, 97);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
@@ -102,11 +104,31 @@
             this.valor.TabIndex = 21;
             this.valor.Text = "Valor";
             // 
+            // tbCodLanche
+            // 
+            this.tbCodLanche.Location = new System.Drawing.Point(70, 57);
+            this.tbCodLanche.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCodLanche.Name = "tbCodLanche";
+            this.tbCodLanche.Size = new System.Drawing.Size(527, 20);
+            this.tbCodLanche.TabIndex = 23;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(26, 57);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Cod:";
+            // 
             // ManterLanche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(635, 274);
+            this.Controls.Add(this.tbCodLanche);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.valor);
             this.Controls.Add(this.btCancelarLanche);
             this.Controls.Add(this.btSalvarLanche);
@@ -132,5 +154,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label valor;
+        private System.Windows.Forms.TextBox tbCodLanche;
+        private System.Windows.Forms.Label label1;
     }
 }
