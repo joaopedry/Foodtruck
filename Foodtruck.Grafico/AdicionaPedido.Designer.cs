@@ -210,6 +210,7 @@
             this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "Valor total:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // lbTotal
             // 
