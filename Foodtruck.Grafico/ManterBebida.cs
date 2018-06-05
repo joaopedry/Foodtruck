@@ -39,18 +39,10 @@ namespace Foodtruck.Grafico
         private void btSalvar_Click(object sender, EventArgs e)
         {
             Bebida bebida = new Bebida();
-            /*if (Int64.TryParse(tbNomebebida, out long value))
-            {
-                cliente.Id = value;
-            }
-            else
-            {
-                cliente.Id = -1;
-                //passa indentificador com valor negativo se não conseguir converter
-            }*/
+            bebida.Id = Convert.ToInt64(tbCodBebida.Text);
             bebida.Nome = tbNomeBebida.Text;
-            bebida.Tamanho = float.Parse(tbTamanhoBebida.Text);
-            bebida.Valor = decimal.Parse(tbValorBebida.Text);
+            bebida.Tamanho = Convert.ToSingle(tbTamanhoBebida.Text);
+            bebida.Valor = Convert.ToDecimal(tbValorBebida.Text);
 
             Validacao validacao;
             if (BebidaSelecionada == null)
@@ -61,8 +53,6 @@ namespace Foodtruck.Grafico
             {
                 validacao = Program.Gerenciador.AlterarBebida(bebida);
             }
-
-
 
             if (!validacao.Valido)
             {
@@ -79,8 +69,12 @@ namespace Foodtruck.Grafico
             {
                 MessageBox.Show("Bebida salva com sucesso");
             }
-
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

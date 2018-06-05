@@ -32,6 +32,7 @@
             this.btRemoverBebida = new System.Windows.Forms.Button();
             this.btAlterarBebida = new System.Windows.Forms.Button();
             this.dgBebidas = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,6 +76,7 @@
             // 
             this.dgBebidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgBebidas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.Nome,
             this.Tamanho,
             this.Valor});
@@ -85,6 +87,12 @@
             this.dgBebidas.Size = new System.Drawing.Size(620, 314);
             this.dgBebidas.TabIndex = 3;
             this.dgBebidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgBebidas_CellContentClick);
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
             // 
             // Nome
             // 
@@ -127,6 +135,7 @@
         private System.Windows.Forms.Button btRemoverBebida;
         private System.Windows.Forms.Button btAlterarBebida;
         private System.Windows.Forms.DataGridView dgBebidas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tamanho;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;

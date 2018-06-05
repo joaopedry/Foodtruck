@@ -16,7 +16,7 @@ namespace Foodtruck.Grafico
         public TelaListaBebida()
         {
             InitializeComponent();
-            CarregarBebidas();
+            //CarregarBebidas();
         }
 
         private void AbreTelaInclusaoAlteracao(Bebida BebidaSelecionada)
@@ -89,8 +89,8 @@ namespace Foodtruck.Grafico
         {
             if (VerificarSelecao())
             {
-                Bebida BebidaSelecionada = (Bebida)dgBebidas.SelectedRows[0].DataBoundItem;
-                AbreTelaInclusaoAlteracao(BebidaSelecionada);
+                Bebida bebidaSelecionada = (Bebida)dgBebidas.SelectedRows[0].DataBoundItem;
+                AbreTelaInclusaoAlteracao(bebidaSelecionada);
             }
         }
 
